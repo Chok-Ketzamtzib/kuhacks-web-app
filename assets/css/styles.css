@@ -403,7 +403,8 @@ p {
 {
     position: relative;
     width: 140vw;
-    height: 55vw;
+    height: 45vw;
+    right: -15vw;
 }
 
 
