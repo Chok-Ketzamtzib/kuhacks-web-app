@@ -546,14 +546,14 @@ div.imgcontainer-overlay
   flex-direction: column;
 }
 
-.landing-container .hackdavis {
+.landing-container .kuhacks {
   font-family: 'Bold';
   font-size: 3.5rem;
   line-height: 5rem;
   font-weight: 200;
 }
 
-.landing-container .hackdavis b {
+.landing-container .kuhacks b {
   font-weight: 600;
 }
 
@@ -1238,7 +1238,7 @@ div.apps-open-soon
 }
 
 @media(min-width: 768px) {
-  #hackdavis {
+  #kuhacks {
     font-size: 2.7rem;
   }
 }
