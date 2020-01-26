@@ -1,7 +1,33 @@
 <!--
 
-(づ￣ ³￣)づ! What's up?
 
+                                          _.-.._         _._
+                                     _,/^^,y./  ^^^^"""^^\= \
+                                     \y###XX;/  /     \    ^\^\
+                                       `\Y^   /   .-==||==-.)^^
+                   ,.-=""""=-.__       /^ (  (   -/<0>++<0>(
+                 .^      .: . . :^===(^ \ (  (  /```^^^^^^^)
+                /      .: .,GGGGp,_ .(   \   /    /-(o'~'o))
+              .^      : . gGG"""YGG}. \   )   / /  _/-====-\
+             /       (. .gGP  __ ~~ . .\  \  (    (  _.---._)
+            /        (. (GGb,,)GGp. . . \_-^-.__(_ /______./
+           (          \ . `"!GGP^ . . . . ^=-._--_--^^^^^~)
+           (        /^^^\_. . . . . . . . . . . . . . . . )
+           )       /     /._. . . . . . . . . . . . . ._.=)
+           \      /      |  ^"=.. . . . . . . ._++""\"^    \
+            \    |       |       )^|^^~'---'~^^      \     )
+            )   /        )      /   \                 \    \
+            |`  |        \     /\    \                (    /
+            |   |         (   (  \ . .\               |   (
+            )   |         )   )   ^^^^^^              |   |
+           /. . \         |  '|                       )   (
+           ^^^^^^         )    \                      /. . \
+                          / . . \                     ^^^^^^
+                          ^^^^^^^
+            Woof! You have met General Determination!
+                                ❤️
+                      * You are filled with 
+                          DETERMINATION
 -->
 
 <!DOCTYPE html>
@@ -18,7 +44,7 @@
     <meta property="og:site_name" content="HackDavis">
     <meta property="og:image" content="https://raw.githubusercontent.com/HackDavis/website-2019/master/hackdavis-screen.png">
     <meta property="og:title" content="HackDavis 2020 | January 18-19 at UC Davis">
-    <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. On January 18-19, 2020, over 700 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues.">
+    <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. On January 18-19, 2020, over 700 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in Michigan to address the world's most pressing social issues.">
     <meta property="og:url" content="https://hackdavis.io">
 
     <meta name="twitter:card" content="summary">
@@ -65,13 +91,22 @@
       <span class="logo">
         <img onclick="location.reload();" src="assets/img/KU_Slanted.png">
       </span>
+<!--  Navigation Bar 
 
+    🐞 DEBUG TIP 🐞
+      To ensure the animation for "Selected" Tabs Work in nav, Make sure the 
+      <li> and <a> elements have an id, otherwise JQuery will throw a 
+      "undefined top" error from main.js, which means the target does not
+      exist. 
+-->
       <nav>
         <ul>
-          <li data-id="landing" class="selected"><a href="#landing">About</a></li>
-          <li data-id="schedule" ><a data-id="schedule" href="#schedule">Schedule</a></li>
+          <li data-id="about" class="about"><a href="#about">About</a></li>
+       <!--   <li data-id="schedule" ><a data-id="schedule" href="#schedule">Schedule</a></li> -->
+          <li data-id="tracks" ><a data-id="tracks" href="#tracks">Tracks</a></li>
           <li data-id="faq" ><a data-id="faq" href="#faq">FAQ</a></li>
           <li data-id="sponsors" ><a data-id="sponsors" href="#sponsors">Sponsors</a></li>
+          <!-- <li data-id="Register"><a data-id="register" href="#stats-container">Register</a></li> -->
         </ul>
       </nav>
     </header>
@@ -109,8 +144,8 @@
             The Connie and Jim John Recreation Center
           </span>
           <div class="buttons">
-            <button onclick="window.open('mailto:wake9706@kettering.edu')">Sponsor 2020</button>
             <button onclick="window.open('')">Register</button>
+            
           </div>
           <div class='apps-open-soon'>Apps will open soon!<br>Keep an eye out for news about KUHacks 2020!</div>
         </div>
@@ -135,11 +170,12 @@
     </section>
 
 
-    <p class="section-title" data-entrance="fade">
-        <span class="underline">Hack for Social Good</span>
-    </p>
+    
 
     <section class="about-container" id="about">
+      <p class="section-title" data-entrance="fade">
+        Hack for Change
+    </p>
       <div class="container about-content" data-entrance="fade">
         <div class="row">
           <div class="col-md-7 readable-text-col social-good-left">
@@ -150,35 +186,38 @@
             -->
             <p class="about-text">
               With the rapid advancement of technology, it is important to use its power in ways that benefit society. 
-              HackDavis challenges its participants to hack for social good, 
-              and create an opportunity for us to explore the intersection between technology and society.
+              KUHacks challenges its participants to hack for social good, make new systems, and create new perspectives to bring awareness to pressing problems.
+              KUHacks creates an opportunity for us to explore the intersection between technology, engineering, and expression to bring a change to society.
             </p>
             <p class="about-text">
-              On May 15-17, over 700 students, hackers, and creators will come together for 24 hours of hacking. 
-              For the 5th year in a row, we're bringing the most talented students in Michigan and around the world to address the world’s most pressing issues. 
-              Participants are able to build projects that address many social good initiatives.
+              On May 15-17, over 700 students - hackers, makers, creators - will come together for 24 hours of hacking. 
+              For the 1st time in Flint, we're bringing the most talented students in Michigan and around the world to address the world’s most pressing issues. 
+              Participants are able to build projects that address many initiatives that seeks to change the status quo.
             </p>
           </div>
           <div class="col-md-5 social-good-right">
             <div class='socialgood-illustration' data-entrance="fade">
-                <img src='./assets/img/hackforsocialgood/building.svg'/>
-                <img class='updown-heart' src='./assets/img/hackforsocialgood/heart.svg'/>
+                <img class='updown-heart' src='./assets/img/hackforsocialgood/4 -colors-delta.png'/>
             </div>
           </div>
         </div>
       </div>
     </section>
+<!-- HACKathon Tracks -->
+    <p class="tracks-hackathon" data-entrance="fade">
+      <span class="underline">Hackathon</span>
+  </p>
 
-    <section class="tracks-container">
+    <section class="tracks-container" id="tracks">
       <div class="container">
         <div class="row">
           <div class="col-md-4 readable-text-col" data-entrance="fade">
             <div class="tracks-header">
               <h2 class="tracks-title">
-                <span class="underline health">Applied Sciences</span>
+                <span class="underline Applied Sciences">Applied Sciences</span>
               </h2>
               <div class='tracks-image'>
-               <img class='tracks-picture' src='./assets/img/Delta Chemistry v1.1.png'></img>
+               <img class='tracks-picture' src='./assets/img/Delta-Chemistry-v1_Transparent.png'></img>
               </div>
             </div>
             <p class="tracks-des">
@@ -188,10 +227,10 @@
           <div class="col-md-4 readable-text-col tracks-2-margin" data-entrance="fade" data-entrance-delay="100">
             <div class="tracks-header">
               <h2 class="tracks-title">
-                <span class="underline environment">Environment</span>
+                <span class="underline GREEN">GREEN</span>
               </h2>
               <div class='tracks-image' >
-                <img class='tracks-picture' src='./assets/img/DeltaBio.png'>
+                <img class='tracks-picture' src='./assets/img/DeltaBio-(1)_transparent.png'>
               </div>
             </div>
             <p class="tracks-des">
@@ -201,9 +240,112 @@
           <div class="col-md-4 readable-text-col tracks-3-margin" data-entrance="fade" data-entrance-delay="200">
             <div class="tracks-header">
               <h2 class="tracks-title">
-                <span class="underline education">Education</span>
+                <span class="underline">Music</span>
               </h2>
-              <div class='tracks-image'></div>
+              <div class='tracks-image'>
+                <img class='tracks-picture' src='./assets/img/Delta-Music_transparent.png'>
+              </div>
+            </div>
+            <p class="tracks-des">
+                Discover new ways to faciliatate learning within the classroom. Enable accessible education for individuals with learning disabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAKEathon Tracks -->
+    <p class="tracks-makeathon" data-entrance="fade">
+      <span class="underline">Makeathon</span>
+  </p>
+
+    <section class="tracks-container" id="tracks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 readable-text-col" data-entrance="fade">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline Applied Sciences">Applied Sciences</span>
+              </h2>
+              <div class='tracks-image'>
+               <img class='tracks-picture' src='./assets/img/Delta-Chemistry-v1_Transparent.png'></img>
+              </div>
+            </div>
+            <p class="tracks-des">
+              Develop a product that encourages people to live a healthier lifestyle. Help predict and prevent illnesses before they affect the body.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col tracks-2-margin" data-entrance="fade" data-entrance-delay="100">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline GREEN">GREEN</span>
+              </h2>
+              <div class='tracks-image' >
+                <img class='tracks-picture' src='./assets/img/DeltaBio-(1)_transparent.png'>
+              </div>
+            </div>
+            <p class="tracks-des">
+                Aggregate public data to analyze or improve government green energy policies. Design solutions to reduce energy consumption in habitable spaces.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col tracks-3-margin" data-entrance="fade" data-entrance-delay="200">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline">Music</span>
+              </h2>
+              <div class='tracks-image'>
+                <img class='tracks-picture' src='./assets/img/Delta-Music_transparent.png'>
+              </div>
+            </div>
+            <p class="tracks-des">
+                Discover new ways to faciliatate learning within the classroom. Enable accessible education for individuals with learning disabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- CREATEATHON Tracks -->
+    <p class="tracks-createathon" data-entrance="fade">
+      <span class="underline">Createathon</span>
+  </p>
+
+    <section class="tracks-container" id="tracks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 readable-text-col" data-entrance="fade">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline Applied Sciences">Applied Sciences</span>
+              </h2>
+              <div class='tracks-image'>
+               <img class='tracks-picture' src='./assets/img/Delta-Chemistry-v1_Transparent.png'></img>
+              </div>
+            </div>
+            <p class="tracks-des">
+              Develop a product that encourages people to live a healthier lifestyle. Help predict and prevent illnesses before they affect the body.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col tracks-2-margin" data-entrance="fade" data-entrance-delay="100">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline GREEN">GREEN</span>
+              </h2>
+              <div class='tracks-image' >
+                <img class='tracks-picture' src='./assets/img/DeltaBio-(1)_transparent.png'>
+              </div>
+            </div>
+            <p class="tracks-des">
+                Aggregate public data to analyze or improve government green energy policies. Design solutions to reduce energy consumption in habitable spaces.
+            </p>
+          </div>
+          <div class="col-md-4 readable-text-col tracks-3-margin" data-entrance="fade" data-entrance-delay="200">
+            <div class="tracks-header">
+              <h2 class="tracks-title">
+                <span class="underline">Music</span>
+              </h2>
+              <div class='tracks-image'>
+                <img class='tracks-picture' src='./assets/img/Delta-Music_transparent.png'>
+              </div>
             </div>
             <p class="tracks-des">
                 Discover new ways to faciliatate learning within the classroom. Enable accessible education for individuals with learning disabilities.
@@ -422,8 +564,10 @@
             <a class="question">What is a hackathon?</a>
             <div class="content">
               <p class="answer">
+                "Hack" = Invent + "Marathon" = Hackathon!
+                <br><br>   
                 A hackathon is where you transform your crazy ideas into real stuff. 
-                Hundreds of hackers from across California and other parts of the U.S. form teams around an idea and collaboratively create a solution from scratch. 
+                Hundreds of hackers from across Michigan and other parts of the U.S. form teams around an idea and collaboratively create a solution from scratch. 
                 These ideas turn into websites, mobile apps, hardware, and more! 
                 <br><br>
                 Come make the most incredible things you can imagine alongside fellow creators. You take care of building and we'll take care of you.
@@ -467,22 +611,23 @@
             </div>
           </div>
           <div class="accordion-item" data-entrance="fade">
-            <a class="question">Why social good?</a>
+            <a class="question">Why Change? A Makeathon and Createathon at a Hackathon?</a>
             <div class="content">
               <p>
-                We want people to build projects with a meaningful impact and hope to foster a community dedicated to social change. 
+                We want people to build projects with a meaningful impact and hope to foster a community dedicated to creating change. 
                 <br> <br>
-                We find that most hackathons often don’t result with projects as practical solutions to specific societal problems and we’re looking to change that.
+                We find that most hackathons often don’t include people outside of Computer Science or even STEM, so we're changing 
+                the way hackathons are done by including a makeathon and createathon all under the same roof!
               </p>
             </div>
           </div>
           <div class="accordion-item" data-entrance="fade">
-            <a class="question">What can I build?</a>
+            <a class="question">What can I hack/make/create?</a>
             <div class="content">
               <p>
-                You can build whatever your heart desires, whether its a web app, mobile app, hardware hack, or an open source tool. Any social good oriented project is recommended.
-                <br> <br>
-                Our main focus is to bring you a learning experience where you can have fun, ask questions, and experiment with technology.
+                You can build whatever your heart desires, whether its a mobile app, hardware hack, or the next pop song. Any social good oriented project is recommended.
+                <br><br>
+                Our main focus is to bring you a learning experience where you can have fun, ask questions, and experiment with technology and new ideas.
               </p>
             </div>
           </div>
@@ -542,7 +687,7 @@
         <div class="container" data-entrance="fade">
 	
 	<!--Diamond Sponsors-->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-sm-8 offset-sm-2">
             <div class='cohosted-by2' data-entrance="fade">Co-hosted by</div>
               <a class="sponsors-link" href="https://www.osisoft.com">
@@ -555,18 +700,20 @@
           <br> 
           <br> 
           <br> 
-          <br> 
+          <br>  -->
 
           <!-- Platinum Sponsors -->
+          <!-- <div class='cohosted-by2' data-entrance="fade">Platinum Sponsors</div>
           <div class="row"  data-entrance="fade">
             <div class="col-sm-12">
               <a class="sponsors-link" href="https://www.centene.com">
-                <img class="img-fluid platinum-sponsor" src="sponsors/centene.png">
+                <img class="img-fluid platinum-sponsor" src="">
               </a>
             </div>
-	  </div>
+	  </div> -->
 
         <!-- Gold Sponsors -->
+        <!-- <div class='cohosted-by2' data-entrance="fade">Gold Sponsors</div> -->
 	<!--
 	<div class="row">
 	  <div class="col-sm-6">
@@ -575,13 +722,14 @@
            </a>
 	  </div>-->
 	
-	<!-- Silver Sponsors -->
-          <div class="row" data-entrance="fade">   
+  <!-- Silver Sponsors -->
+  <div class='cohosted-by2' data-entrance="fade">Silver Sponsors</div>
+          <!-- <div class="row" data-entrance="fade">   
             <div class="col-sm-6 sponsors-link">
                 <a class="sponsors-link" href="https://www.1517fund.com/">
                 <img class="img-fluid silver-sponsor" src="sponsors/1517fund.png">
                 </a>
-                </div>
+                </div> -->
 
              <div class="col-sm-6">
                 <a class="sponsors-link" href="https://cloud.google.com">
@@ -591,9 +739,10 @@
 	    </div>
 
           <!-- Bronze Sponsors -->
+          <div class='cohosted-by2' data-entrance="fade">Bronze Sponsors</div>
           <div class="row" data-entrance="fade">
 
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
                 <a class="sponsors-link" href="https://ripplematch.com/">
                   <img class="img-fluid bronze-sponsor" src="sponsors/ripplematch.png">
                 </a>
@@ -602,14 +751,14 @@
                 <a class="sponsors-link" href="https://ultrapress.com/">
                   <img class="img-fluid bronze-sponsor" src="sponsors/ultrapress.png">
                 </a>
-              </div>
+              </div> -->
               <div class="col-sm-4">
                 <a class="sponsors-link" href="http://hackp.ac/mlh-stickermule-hackathons">
                  <img class="img-fluid bronze-sponsor" src="sponsors/stickermule.png">
                 </a>
               </div>
 
-              <div class="col-sm-4">
+              <!-- <div class="col-sm-4">
                 <a class="sponsors-link" href="https://www.pepsi.com/en-us/">
                   <img class="img-fluid bronze-sponsor" src="sponsors/pepsi.png">
                 </a>
@@ -649,7 +798,7 @@
                 <a class="sponsors-link" href="https://emmysorganics.com/">
                   <img class="img-fluid bronze-sponsor" src="sponsors/emmys_organics.png">
                 </a>
-              </div>
+              </div> -->
 
 
 
@@ -670,7 +819,7 @@
           </a>
         </div>
         
-        <div class="col-sm-4">
+        <!-- <div class="col-sm-4">
             <a class="sponsors-link" href="https://csi.ucdavis.edu/">
               <img class="img-fluid bronze-sponsor" src="sponsors/csi.png">
             </a>
@@ -710,13 +859,13 @@
             <a class="sponsors-link" href="https://startup.ucdavis.edu/">
               <img class="img-fluid bronze-sponsor" src="sponsors/startup.png">
             </a>
-          </div>
+          </div> -->
         <!-- College of engineering -->
-        <div class="col-sm-4">
+        <!-- <div class="col-sm-4">
             <a class="sponsors-link" href="https://engineering.ucdavis.edu/">
               <img class="img-fluid bronze-sponsor" src="sponsors/davis_ce.png">
             </a>
-          </div>
+          </div> -->
 
     
     </div>
@@ -726,11 +875,12 @@
     <br><br><br><br><br>
     <div class='cohosted-by2' data-entrance="fade">2020 Nonprofits</div>
     <div class="row" data-entrance="fade">
-        <div class="col-sm-4">
-          <a class="sponsors-link" href="https://www.aging2.com/">
-            <img class="img-fluid bronze-sponsor" src="sponsors/aging2.png">
+       <div class="col-sm-4">
+          <a class="sponsors-link" href="https://www.100kideas.org/">
+            <img class="img-fluid bronze-sponsor" src="sponsors/100k.png">
           </a>
         </div>
+        <!--
         <div class="col-sm-4">
             <a class="sponsors-link" href="http://childrensscoliosisfoundation.org/content/">
               <img class="img-fluid bronze-sponsor" src="sponsors/childrensscholiosis.png">
@@ -745,14 +895,18 @@
   
     </div>
         </div>
+      -->
+        <div class="sponsor-button">
+          <button onclick="window.open('mailto:wake9706@kettering.edu')">Sponsor KUHacks 2020</button>
+        </div>
         <br><br>
         
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container">      
       <img src="assets/img/KU_Slanted.png" alt="logo" class="logo-picture">
       <div id="footer-content">
-        <a class="smallbutton1" href="mailto:team@kuhacks.io">
+        <a class="smallbutton1" href ailto:team@kuhacks.io">
           <i class="fa fa-envelope fa-sm" aria-hidden="true"></i>
         </a>
         <a class="smallbutton1" href="https://medium.com/@KUHackstarget="_blank rel="noopener noreferrer">
@@ -769,8 +923,8 @@
         </a>
       </div>
       <div id="copyright">
-        <span>&copy; 2020 KUHacks • Made with ☕️ & 💛 in Kettering</span>
-      </div>
+        <span>&copy; 2020 KUHacks • Made with ☕️ & ❤️ from the KUHacks team. Art from Brandon Araguay</span>
+      </div> 
     </section>
 
     <a href="#landing" id="scroll-to-top">

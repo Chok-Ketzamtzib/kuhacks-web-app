@@ -1,3 +1,3 @@
-# Kettering's website 2020
+# KUHacks website 2020
 
-Made with ☕️ & 💛 in Kettering
+Made with ☕️ & ❤️ from the KUHacks Team

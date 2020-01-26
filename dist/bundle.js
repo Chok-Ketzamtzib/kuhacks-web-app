@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // set typed
 var typed = new Typed('#typed', {
-  strings: ['// code for social good'],
+  strings: ['// Hack. Make. Create.'],
   typeSpeed: 30,
   backSpeed: 8,
   backDelay: 3500,

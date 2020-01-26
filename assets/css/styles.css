@@ -35,7 +35,7 @@
 @font-face {
     font-family: "BlackIt";
     font-weight: 700;
-    font-style: bold;
+    font-style: italic;
     src: url("../fonts/SourceCodePro-BlackIt.otf");
   }
 
@@ -53,20 +53,20 @@
     
 @font-face {
     font-family: "ExtraLight";
-    font-weight: bold;
+    font-weight: normal;
     src: url("../fonts/SourceCodePro-ExtraLight.otf");
 }
 
 @font-face {
     font-family: "ExtraLightIt";
     font-weight: 100;
-    font-style: normal;
+    font-style: italic;
     src: url("../fonts/SourceCodePro-ExtraLightIt.otf");
   }
   @font-face {
     font-family: "It";
     font-weight: 300;
-    font-style: light;
+    font-style: italic;
     src: url("../fonts/SourceCodePro-It.otf");
   }
   @font-face {
@@ -78,39 +78,38 @@
   @font-face {
       font-family: "LightIt";
       font-weight: 500;
-      font-style: medium;
+      font-style: italic;
       src: url("../fonts/SourceCodePro-LightIt.otf");
     }
   @font-face {
   font-family: "Medium";
   font-weight: 600;
-  font-style: medium;
+  font-style: normal;
   src: url("../fonts/SourceCodePro-Medium.otf");
   }
   @font-face {
     font-family: "MediumIt";
     font-weight: 700;
-    font-style: bold;
+    font-style: italic;
     src: url("../fonts/SourceCodePro-MediumIt.otf");
   }
   @font-face {
     font-family: "Regular";
     font-weight: 900;
-    font-style: bold;
+    font-style: normal;
     src: url("../fonts/SourceCodePro-Regular.otf");
   }
 
   @font-face {
     font-family: "Semibold";
-    font-weight: 900;
-    font-style: bold;
+    font-style: normal;
     src: url("../fonts/SourceCodePro-Semibold.otf");
   }
 
   @font-face {
     font-family: "SemiboldIt";
     font-weight: 900;
-    font-style: bold;
+    font-style: italic;
     src: url("../fonts/SourceCodePro-SemiboldIt.otf");
   }
 
@@ -172,10 +171,10 @@ html {
 }
 
 body {
-  font-family: 'source code pro';
+  font-family: 'light';
   font-style: normal;
   font-size: 0.9rem;
-  background-color: #0A0618;
+  background-color: black;
 }
 
 img {
@@ -197,7 +196,7 @@ ul {
 }
 
 .section-title {
-  font-family: 'source code pro';
+  font-family: 'Semibold';
   font-size: 3em;
   font-weight: 600;
   color: #fff;
@@ -209,9 +208,10 @@ ul {
   letter-spacing: -.025em;
   /*width: 100%;*/
   text-align: left;  
-  margin-left: 20vw; /* TODO: fix this */
+  margin-left: 18vw; /* TODO: fix this */
   /*background-color: red;*/
 }
+
 
 #mlh-trust-badge {
   position: absolute;
@@ -239,7 +239,8 @@ button {
     background: none;
     border-radius: 3.05em;
     color:white;
-    height: 2.6em;
+    height: 6em;
+    width: 18em;
     padding: 0.1em 1.1em 0 1.1em;
     font-size: 0.83rem;
     font-weight: 500;
@@ -250,8 +251,9 @@ button {
 button:focus {outline:0;}
 
 code {
-  color: #F0918E;
+  color: #38b6ff;
 }
+
 
 h2 {
   color: #fff;
@@ -325,6 +327,16 @@ p {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  justify-content: flex-end left;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.page-header nav ul li .rightend {
+    display: flex;
+  flex-direction: row;
+  list-style-type: none;
   justify-content: flex-end;
   padding: 0;
   margin: 0;
@@ -341,8 +353,8 @@ p {
 }
 
 .page-header nav li {
-    font-family: 'source code pro';
-    font-weight: 500;
+  
+  font-family: 'SemiBold';  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -504,9 +516,8 @@ div.socialgood-illustration
 div.socialgood-illustration img
 {
     position: absolute;
-    left: -47vw;
-    top: -11vw;
-    height: 40vw;
+    bottom: 10vh; 
+    height: auto;
     width: auto;
 }
 
@@ -536,7 +547,7 @@ div.imgcontainer-overlay
 }
 
 .landing-container .hackdavis {
-  font-family: 'source code pro', monospace;
+  font-family: 'Bold';
   font-size: 3.5rem;
   line-height: 5rem;
   font-weight: 200;
@@ -547,26 +558,35 @@ div.imgcontainer-overlay
 }
 
 .landing-container .code {
-font-family: "sourcecode pro", monospace;
+font-family: 'light';
 font-weight: 100;
 font-size: 1.4rem;
 line-height: 29px;
 }
 
 .landing-container .when-where {
-  font-family: 'Avenir Next';
+  font-family: 'semibold';
   font-size: 0.9rem;
   line-height: 27px;
   margin: 2em 0 2em 0;
 }
 
 .buttons {
-    margin-top: 1rem;
+    
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
+.sponsor-button {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; 
+}
 button {
+ font-family: 'Bold';
   position: relative;
   margin-right: 1em; 
   padding-left: 1.5rem;
@@ -707,7 +727,7 @@ div.stats-illustration
 }
 
 .about-content .row, .tracks-container .row {
-  justify-content: space-evenly;
+  justify-content: left;
 }
 
 .readable-text-col {
@@ -729,8 +749,7 @@ h1.social-good-text {
 }
 
 p.about-text {
-  font-family: 'source code pro';
-  font-weight: 400;
+  font-family: 'light';
   -webkit-font-smoothing: subpixel-antialiased;
   text-align: -webkit-left;
   text-align: left;
@@ -772,7 +791,7 @@ img.tracks-img {
     flex-grow: 0;
     width: 100%;
     height: auto;
-    background: linear-gradient(180deg, #52b7ff, #1188dc);
+    opacity: 1;
 }
 
 .tracks-2-margin
@@ -784,9 +803,33 @@ img.tracks-img {
 {
     margin-top: 8rem;
 }
+.tracks-hackathon {
+  font-family: 'Bold';
+  font-size: 5rem;
+  justify-content: center;
+  text-align: center;
+  color: #ff5757;
+}
+
+.tracks-makeathon {
+  font-family: 'Bold';
+  font-size: 5rem;
+  justify-content: center;
+  text-align: center;
+  color: #77f45a;
+}
+
+.tracks-createathon {
+  font-family: 'Bold';
+  font-size: 5rem;
+  justify-content: center;
+  text-align: center;
+  color: #38b6ff;
+}
+
 
 h2.tracks-title {
-  font-family: 'Avenir Next';
+  font-family: 'Semibold';
   line-height: 1.25;
   font-size: 2rem;
   font-weight: bold;
@@ -795,7 +838,7 @@ h2.tracks-title {
 }
 
 p.tracks-des {
-    font-family: 'Avenir Next';
+    font-family: 'lightIt';
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -821,7 +864,7 @@ p.tracks-des {
 }
 
 .day-title {
-  font-family: "Avenir Next" !important;
+  font-family: "regular" !important;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: .5px;
@@ -939,7 +982,7 @@ p.tracks-des {
 
 .accordion a.active {
   color: #fff;
-  border-bottom: 1.5px solid #F0918E;
+  border-bottom: 1.5px solid #38b6ff;
 }
 
 .accordion a.question::after {
@@ -1079,6 +1122,7 @@ div#copyright {
 }
 
 #copyright > span {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color:rgba(249,250,252,.75);
   font-size: .9em;
   font-weight: normal;
@@ -1129,7 +1173,7 @@ div#copyright {
 div.apps-open-soon
 {
     margin-top: 1.5rem;
-    font-family: 'Avenir Next';
+    font-family: 'light';
     font-style: italic;
     display: block;
     color: rgba(255, 255, 255, 0.5);
