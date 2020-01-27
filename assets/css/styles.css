@@ -780,7 +780,8 @@ img.tracks-img {
   justify-content: left;
   flex-direction: column;
   flex-grow: 0;
-  max-width: 100%;
+  max-width: min(26em, 100%);
+  margin: auto;
   height: auto;
 }
 
