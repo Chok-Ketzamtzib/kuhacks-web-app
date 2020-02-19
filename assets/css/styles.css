@@ -574,13 +574,13 @@ line-height: 29px;
 .buttons {
     
   margin-top: 1rem;
-  display: flex;
+  display: block;
   flex-direction: row;
   width: 100%;
 }
 .sponsor-button {
-    margin-top: 4rem;
-    display: flex;
+    margin-top: 2rem;
+    display: block;
     flex-direction: row;
     justify-content: center;
     width: 100%; 
@@ -588,7 +588,7 @@ line-height: 29px;
 button {
  font-family: 'Bold';
   position: relative;
-  margin-right: 1em; 
+  margin-right: 1rem; 
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 0.9rem;
@@ -600,6 +600,13 @@ button {
     #CA3194,
     #EC9B78
   );*/
+}
+
+button.home-button {
+  height: 3rem;
+  width: 12rem;
+  display: block;
+  margin-top: 1.5rem;
 }
 
 button:hover {
@@ -620,12 +627,12 @@ button:hover {
 .stats-content {
     display: inline-flex;
     flex-direction: column;
-  justify-content: center;
-  width: fit-content;
+  justify-content: right;
+  width: 25rem;
   text-align: left;
   font-size: 1.4rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   z-index: 2;
 }
 
@@ -704,6 +711,7 @@ div.stats-illustration
 
 .stats-illustration .img-container .ring-front {
   z-index: 2;
+  display: block;
 }
 
 /******* recap *******/
